@@ -47,9 +47,9 @@ public class UserController {
     @RequestMapping("jdbcQueryUser")
     @ResponseBody
     public List<User> jdbcQueryUser(){
-        List<User> userlist=userJdbc.getUserList();
+        List<User> userlists=userJdbc.getUserList();
         System.out.println("jdbc");
-        return userlist;
+        return userlists;
     }
     @RequestMapping("jdbcQueryUserById")
     @ResponseBody
